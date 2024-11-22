@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 1500px;
+            height: 1500px;
+            margin: 50px;
+            background: url(sun_image1.jpg) no-repeat;
+            position: relative;
+ 
+            animation-name: moving;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+        }
+        @keyframes moving {
+            from {
+        top: 1000px;
+    }
+    to {
+        top: 0;
+    }
+ 
+    }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+       
+    </div>
+   
+
+</body>
+
+</html>
