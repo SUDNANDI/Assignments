@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .operator table,th,td{
+            border:2px solid;
+        }
+        .index table,th,td{
+            border:1px solid;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 align ="center"><u>JAVA</u></h1>
+    <h1 align ="center"><u>CHAPTER 1</u></h1>
+    <div class="index">
+        <dl>
+            <dt><u>INDEX</u></dt>
+            <br>
+        </dl>
+        <table>
+            <thead>
+                <th>Sr.No</th>
+                <th>Topics</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>INTRODUCTION</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>INSTALLATION</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>OPERATORS</td>
+                </tr>
+            </tbody>
+        </table>
+        <dl>
+            <dt>INTRODUCTION</dt>
+            <ul>
+            <li><dd>Java is a class-based, object-oriented programming language designed to have as few implementation dependencies as possible.</li></dd>
+            <li><dd>Java is known for its simplicity, robustness, and security features, making it a popular choice for enterprise-level applications.</li></dd>
+            <li><dd>Java is an object-oriented language, promoting the use of objects and classes.</li></dd>
+            </ul>
+        </dl>
+        <dl>
+            <dt>INSTALLATION</dt><br>
+            <dd>steps:</dd>
+            <ol>
+            <li>Open the <a href ="">URL</a></li>
+            <li>Click on Download</li>
+            <li>Run the installer</li>
+            <li>Follow the instructions provided by the installer</li>
+            <li>Verify the installation</li>
+            <li>Set the JAVA HOME environment variable</li>
+            </ol>
+        </dl>
+        <d1>
+            <dt>OPERATORS</dt>
+            <div class="operator">
+
+                <table>
+                    <thead>
+                        <th>Name</th>
+                        <th>Symbol</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Addition</td>
+                            <td>+</td>
+                            <td>Adds together two values</td>
+                            <td>X+Y</td>
+                        </tr>
+                        <tr>
+                            <td>Subtraction</td>
+                            <td>-</td>
+                            <td>Subtracts one value from another</td>
+                            <td>X-Y</td>
+                        </tr>
+                        <tr>
+                            <td>Multiplication</td>
+                            <td>*</td>
+                            <td>Multiplies two values</td>
+                            <td>X*Y</td>
+                        </tr>
+                        <tr>
+                            <td>Division</td>
+                            <td>/</td>
+                            <td>Divides one value by another</td>
+                            <td>X/Y</td>
+                        </tr>
+                        <tr>
+                            <td>ModulUs</td>
+                            <td>%</td>
+                            <td>Returns the division remainder</td>
+                            <td>X%Y</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </dl>
+    </div>
+</body>
+</html>
