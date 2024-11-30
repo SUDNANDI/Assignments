@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <h1>Welcome to the User Dashboard</h1>
+ 
+  <!-- Search Form -->
+  <form id="searchForm">
+    <input type="text" id="searchName" placeholder="Search by name">
+    <input type="text" id="searchCategory" placeholder="Search by category">
+    <button type="submit">Search</button>
+  </form>
+   
+  <div id="searchResults">
+    <!-- Results will be displayed here -->
+  </div>
+   
+ 
+  <script>
+    document.getElementById("searchForm").addEventListener("submit", function(event) {
+      event.preventDefault();  // Prevent page reload
+   
+      const query = document.getElementById("searchName").value;  // Get search name
+      const category = document.getElementById("searchCategory").value;  // Get search category
+   
+      // Fetch the search results from the server
+      fetch(`/search-products?query=${query}&category=${category}`)
+        .then(response => response.json())  // Convert response to JSON
+        .then(data => {
+          const resultsDiv = document.getElementById("searchResults");
+          resultsDiv.innerHTML = "";  // Clear previous results
+   
+          if (data.length > 0) {
+            // Display search results
+            data.forEach(product => {
+              const productDiv = document.createElement("div");
+              productDiv.innerHTML = `
+                <p><strong>Product Name:</strong> ${product.productName}</p>
+                <p><strong>Price:</strong> ${product.price}</p>
+                <p><strong>Category:</strong> ${product.category}</p>
+                <p><strong>Manufacture Date:</strong> ${product.mfgDate}</p>
+                <p><strong>Expiration Date:</strong> ${product.expDate}</p>
+              `;
+              resultsDiv.appendChild(productDiv);
+            });
+          } else {
+            resultsDiv.innerHTML = "<p>No products found.</p>";  // If no products match
+          }
+        })
+        .catch(err => console.error("Error:", err));  // Handle any errors
+    });
+  </script>
+  </body>
+  </html>
