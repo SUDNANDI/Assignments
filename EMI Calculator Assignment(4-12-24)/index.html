@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EMI Calculator</h1>
+        <form id="emi-form">
+            <label for="loan-type">Loan Type:</label>
+            <select id="loan-type" required>
+                <option value="home">Home Loan</option>
+                <option value="car">Car Loan</option>
+                <option value="education">Education Loan</option>
+                <option value="Business">Business Loan</option>
+                <option value="Personal">Personal Loan</option>
+                <option value="Gold">Gold Loan</option>
+            </select>
+
+            <label for="loan-amount">Loan Amount (in INR):</label>
+            <input type="number" id="loan-amount" required>
+
+            <label for="salary">Monthly Earnings (in INR):</label>
+            <input type="number" id="salary" required>
+
+            <button type="submit">Calculate EMI</button>
+        </form>
+
+        <div id="emi-result">
+            <h3>EMI: ₹<span id="emi"></span></h3>
+            <h3>Suggested Loan Duration: <span id="duration"></span> years</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
