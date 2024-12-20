@@ -1,0 +1,139 @@
+/*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+
+}
+ 
+header {
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+ 
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+ 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+ 
+nav li {
+    margin-right: 20px;
+}
+ 
+nav a {
+    text-decoration: none;
+    color: white;
+}
+.auth .login {
+    background-color: rgb(242, 242, 45);
+    color: black;
+  }
+   .auth .register {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }*/
+
+  body { 
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+}
+
+.Food-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+}
+
+.Food-logo img {
+    width: 80px;
+    height: 70px; 
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 90px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.auth-buttons button {
+    background-color: yellow;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.recipes {
+    text-align: center;
+    padding: 20px;
+}
+
+.recipes h2 {
+    background-color: rgb(180, 180, 15); 
+    padding: 30px; 
+    font-size: 2rem; 
+    margin: 0; 
+}
+
+.recipe-list {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding-bottom: 20px;
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+.recipe {
+    text-align: center;
+    border: 1px solid #111;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    flex-shrink: 0; /* Prevent the item from shrinking */
+}
+
+.recipe img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid white; /* White circle border around the image */
+}
+

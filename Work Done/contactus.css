@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3c53d;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+  }
+  .Food-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+  }
+  .Food-logo img {
+  width: 80px;
+  height: 70px; 
+  }
+  
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 90px;
+  }
+   
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+   
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+   
+  .auth-buttons button {
+    background-color: yellow;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+   
+
+/* Main Section */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 5px; /* Space between the form and the image */
+    margin: 20px;
+    background-color: #f3c53d;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.callback-form {
+    padding: 20px;
+}
+
+.callback-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.callback-form h2 span {
+    color: white;
+}
+
+/*form input, form textarea {
+    width: calc(100% - 20px); Ensures proper padding 
+    padding: 10px;
+    margin: 10px auto;  Center align with auto margins 
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}*/
+
+form input, form textarea {
+    width: calc(100% - 20px); /* Keeps full width with padding */
+    padding: 15px;            /* Increases padding for a larger feel */
+    margin: 10px auto;        /* Centers the input boxes */
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;        /* Increases font size for better readability */
+}
+
+form textarea {
+    height: 80px;            /* Increases height for the message box */
+}
+
+
+form button {
+    background-color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: black;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+    display: block;
+    width: 50%;              /* Full width button */
+    max-width: 150px;
+    
+   
+}
+
+form button:hover {
+    background-color: #ffd700;
+}
+
+.image-section {
+    text-align: center;
+}
+
+.image-section img {
+   /* width: 100%;
+    max-width: 100%;  Ensures it stays responsive 
+    border-radius: 5px;*/
+    width: 100%;            /* Ensures the image is responsive */
+    max-width: 600px;       /* Sets a maximum width for the image */
+    height: auto;           /* Maintains the aspect ratio */
+    border-radius: 5px;     /* Keeps the rounded corners */
+    margin: 0 auto;         /* Centers the image if needed */
+}
